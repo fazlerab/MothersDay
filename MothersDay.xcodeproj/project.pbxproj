@@ -14,6 +14,7 @@
 		1DDFD07F1CDBA6750098B16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD07E1CDBA6750098B16F /* Assets.xcassets */; };
 		1DDFD0821CDBA6750098B16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD0801CDBA6750098B16F /* LaunchScreen.storyboard */; };
 		1DDFD08D1CDBA6750098B16F /* MothersDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD08C1CDBA6750098B16F /* MothersDayTests.m */; };
+		CE53C6101CDBC3C700A075C9 /* HandleSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = CE53C60F1CDBC3C700A075C9 /* HandleSwipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1DDFD0881CDBA6750098B16F /* MothersDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MothersDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDFD08C1CDBA6750098B16F /* MothersDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MothersDayTests.m; sourceTree = "<group>"; };
 		1DDFD08E1CDBA6750098B16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE53C60E1CDBC3C700A075C9 /* HandleSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleSwipe.h; sourceTree = "<group>"; };
+		CE53C60F1CDBC3C700A075C9 /* HandleSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleSwipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				1DDFD0761CDBA6750098B16F /* AppDelegate.m */,
 				1DDFD0781CDBA6750098B16F /* ItsHappeningViewController.h */,
 				1DDFD0791CDBA6750098B16F /* ItsHappeningViewController.m */,
+				CE53C60E1CDBC3C700A075C9 /* HandleSwipe.h */,
+				CE53C60F1CDBC3C700A075C9 /* HandleSwipe.m */,
 				1DDFD07B1CDBA6750098B16F /* Main.storyboard */,
 				1DDFD07E1CDBA6750098B16F /* Assets.xcassets */,
 				1DDFD0801CDBA6750098B16F /* LaunchScreen.storyboard */,
@@ -213,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE53C6101CDBC3C700A075C9 /* HandleSwipe.m in Sources */,
 				1DDFD07A1CDBA6750098B16F /* ItsHappeningViewController.m in Sources */,
 				1DDFD0771CDBA6750098B16F /* AppDelegate.m in Sources */,
 				1DDFD0741CDBA6750098B16F /* main.m in Sources */,
