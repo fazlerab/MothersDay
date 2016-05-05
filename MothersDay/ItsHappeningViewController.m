@@ -6,13 +6,13 @@
 //  Copyright © 2016 TurnToTech Hackathon. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ItsHappeningViewController.h"
 
-@interface ViewController ()
+@interface ItsHappeningViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ItsHappeningViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
