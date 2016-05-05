@@ -14,6 +14,9 @@
 		1DDFD07F1CDBA6750098B16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD07E1CDBA6750098B16F /* Assets.xcassets */; };
 		1DDFD0821CDBA6750098B16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD0801CDBA6750098B16F /* LaunchScreen.storyboard */; };
 		1DDFD08D1CDBA6750098B16F /* MothersDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD08C1CDBA6750098B16F /* MothersDayTests.m */; };
+		53F31D7D1CDBAF9500984E4E /* GetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F31D7C1CDBAF9500984E4E /* GetRequest.m */; };
+		53F31D7F1CDBB57000984E4E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F31D7E1CDBB57000984E4E /* CoreData.framework */; };
+		53F31D821CDBB58D00984E4E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53F31D801CDBB58D00984E4E /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		1DDFD0881CDBA6750098B16F /* MothersDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MothersDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDFD08C1CDBA6750098B16F /* MothersDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MothersDayTests.m; sourceTree = "<group>"; };
 		1DDFD08E1CDBA6750098B16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F31D7B1CDBAF9100984E4E /* GetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRequest.h; sourceTree = "<group>"; };
+		53F31D7C1CDBAF9500984E4E /* GetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRequest.m; sourceTree = "<group>"; };
+		53F31D7E1CDBB57000984E4E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		53F31D811CDBB58D00984E4E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F31D7F1CDBB57000984E4E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 		1DDFD0661CDBA6750098B16F = {
 			isa = PBXGroup;
 			children = (
+				53F31D7E1CDBB57000984E4E /* CoreData.framework */,
 				1DDFD0711CDBA6750098B16F /* MothersDay */,
 				1DDFD08B1CDBA6750098B16F /* MothersDayTests */,
 				1DDFD0701CDBA6750098B16F /* Products */,
@@ -81,12 +90,15 @@
 		1DDFD0711CDBA6750098B16F /* MothersDay */ = {
 			isa = PBXGroup;
 			children = (
+				53F31D7B1CDBAF9100984E4E /* GetRequest.h */,
+				53F31D7C1CDBAF9500984E4E /* GetRequest.m */,
 				1DDFD0751CDBA6750098B16F /* AppDelegate.h */,
 				1DDFD0761CDBA6750098B16F /* AppDelegate.m */,
 				1DDFD0781CDBA6750098B16F /* ItsHappeningViewController.h */,
 				1DDFD0791CDBA6750098B16F /* ItsHappeningViewController.m */,
 				1DDFD07B1CDBA6750098B16F /* Main.storyboard */,
 				1DDFD07E1CDBA6750098B16F /* Assets.xcassets */,
+				53F31D801CDBB58D00984E4E /* Model.xcdatamodeld */,
 				1DDFD0801CDBA6750098B16F /* LaunchScreen.storyboard */,
 				1DDFD0831CDBA6750098B16F /* Info.plist */,
 				1DDFD0721CDBA6750098B16F /* Supporting Files */,
@@ -213,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F31D7D1CDBAF9500984E4E /* GetRequest.m in Sources */,
 				1DDFD07A1CDBA6750098B16F /* ItsHappeningViewController.m in Sources */,
+				53F31D821CDBB58D00984E4E /* Model.xcdatamodeld in Sources */,
 				1DDFD0771CDBA6750098B16F /* AppDelegate.m in Sources */,
 				1DDFD0741CDBA6750098B16F /* main.m in Sources */,
 			);
@@ -416,6 +430,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		53F31D801CDBB58D00984E4E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53F31D811CDBB58D00984E4E /* Model.xcdatamodel */,
+			);
+			currentVersion = 53F31D811CDBB58D00984E4E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DDFD0671CDBA6750098B16F /* Project object */;
 }

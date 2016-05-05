@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    GetRequest *get = [[GetRequest alloc]init];
+    [get getRequest];
 }
 
 - (void)didReceiveMemoryWarning {

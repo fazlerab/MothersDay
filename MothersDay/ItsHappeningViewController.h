@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GetRequest.h"
 
 @interface ItsHappeningViewController : UIViewController
 
