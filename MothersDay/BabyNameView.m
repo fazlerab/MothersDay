@@ -23,8 +23,8 @@
     if (self) {
       
 //      self.name = [GetRequest getName];   //  Set name to property.
-      self.name = @"James";
       self.dao = [DAO sharedInstance];
+      self.name = self.dao.generatedBabyName;
       [self setupUI];
     }
     return self;
@@ -34,15 +34,9 @@
   BOOL hasNameBeenSwiped = [self.dao checkForSavedName:self.name];
   if (hasNameBeenSwiped == NO) {
     self.nameLabel.text = self.name;
+  } else if (hasNameBeenSwiped == YES) {
+    self.nameLabel.text = [self.dao generateNewBabyName];
   }
-  
-  //  ELSE GET NEW NAME....
-
-  /*
-  else if (hasNameBeenSwiped == YES) {
-    self.name = [GetRequest getName];
-  }
-   */
   
   if ([self.yesButton isSelected]) {
     [self.dao addNameToSavedNames:self.name];

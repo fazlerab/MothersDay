@@ -13,6 +13,8 @@
 @interface ItsHappeningViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *ItsHappeningLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dueDateLabel;
+@property (weak, nonatomic) IBOutlet UIButton *babyBoyButton;
+@property (weak, nonatomic) IBOutlet UIButton *babyGirlButton;
 
 
 

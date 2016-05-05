@@ -12,9 +12,14 @@
 
 @property (nonatomic, retain) NSMutableArray *savedNames;
 @property (nonatomic, retain) NSMutableArray *deletedNames;
+@property (nonatomic, retain) NSString *generatedBabyName;
+@property (nonatomic, retain) NSString *babyGender;
 
 + (instancetype)sharedInstance;
 - (instancetype)privateInit;
+- (NSString *)generateNewBabyName;
+- (NSString *)itsABoy;
+- (NSString *)itsAGirl;
 - (void)addNameToSavedNames:(NSString *)name;
 - (void)addNameToDeletedNames:(NSString *)name;
 - (BOOL)checkForSavedName:(NSString *)nameToCheck;
