@@ -14,9 +14,14 @@
 		1DDFD07F1CDBA6750098B16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD07E1CDBA6750098B16F /* Assets.xcassets */; };
 		1DDFD0821CDBA6750098B16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD0801CDBA6750098B16F /* LaunchScreen.storyboard */; };
 		1DDFD08D1CDBA6750098B16F /* MothersDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD08C1CDBA6750098B16F /* MothersDayTests.m */; };
+<<<<<<< HEAD
 		53F31D7D1CDBAF9500984E4E /* GetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F31D7C1CDBAF9500984E4E /* GetRequest.m */; };
 		53F31D7F1CDBB57000984E4E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F31D7E1CDBB57000984E4E /* CoreData.framework */; };
 		53F31D821CDBB58D00984E4E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53F31D801CDBB58D00984E4E /* Model.xcdatamodeld */; };
+=======
+		1DDFD0991CDBAAFC0098B16F /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD0981CDBAAFC0098B16F /* CountdownViewController.m */; };
+		1DDFD09C1CDBCAE70098B16F /* BabyNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD09B1CDBCAE70098B16F /* BabyNameView.m */; };
+>>>>>>> 158b6e7b70d9d3e1a0ea2eba522ad60a22102e4a
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +48,17 @@
 		1DDFD0881CDBA6750098B16F /* MothersDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MothersDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDFD08C1CDBA6750098B16F /* MothersDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MothersDayTests.m; sourceTree = "<group>"; };
 		1DDFD08E1CDBA6750098B16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		53F31D7B1CDBAF9100984E4E /* GetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRequest.h; sourceTree = "<group>"; };
 		53F31D7C1CDBAF9500984E4E /* GetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRequest.m; sourceTree = "<group>"; };
 		53F31D7E1CDBB57000984E4E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		53F31D811CDBB58D00984E4E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+=======
+		1DDFD0971CDBAAFC0098B16F /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
+		1DDFD0981CDBAAFC0098B16F /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
+		1DDFD09A1CDBCAE70098B16F /* BabyNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyNameView.h; sourceTree = "<group>"; };
+		1DDFD09B1CDBCAE70098B16F /* BabyNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyNameView.m; sourceTree = "<group>"; };
+>>>>>>> 158b6e7b70d9d3e1a0ea2eba522ad60a22102e4a
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,10 @@
 				1DDFD0761CDBA6750098B16F /* AppDelegate.m */,
 				1DDFD0781CDBA6750098B16F /* ItsHappeningViewController.h */,
 				1DDFD0791CDBA6750098B16F /* ItsHappeningViewController.m */,
+				1DDFD0971CDBAAFC0098B16F /* CountdownViewController.h */,
+				1DDFD0981CDBAAFC0098B16F /* CountdownViewController.m */,
+				1DDFD09A1CDBCAE70098B16F /* BabyNameView.h */,
+				1DDFD09B1CDBCAE70098B16F /* BabyNameView.m */,
 				1DDFD07B1CDBA6750098B16F /* Main.storyboard */,
 				1DDFD07E1CDBA6750098B16F /* Assets.xcassets */,
 				53F31D801CDBB58D00984E4E /* Model.xcdatamodeld */,
@@ -225,9 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				53F31D7D1CDBAF9500984E4E /* GetRequest.m in Sources */,
 				1DDFD07A1CDBA6750098B16F /* ItsHappeningViewController.m in Sources */,
 				53F31D821CDBB58D00984E4E /* Model.xcdatamodeld in Sources */,
+=======
+				1DDFD0991CDBAAFC0098B16F /* CountdownViewController.m in Sources */,
+				1DDFD07A1CDBA6750098B16F /* ItsHappeningViewController.m in Sources */,
+				1DDFD09C1CDBCAE70098B16F /* BabyNameView.m in Sources */,
+>>>>>>> 158b6e7b70d9d3e1a0ea2eba522ad60a22102e4a
 				1DDFD0771CDBA6750098B16F /* AppDelegate.m in Sources */,
 				1DDFD0741CDBA6750098B16F /* main.m in Sources */,
 			);
