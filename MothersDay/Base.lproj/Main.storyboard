@@ -49,28 +49,29 @@
                     <connections>
                         <outlet property="ItsHappeningLabel" destination="YfO-iF-uw5" id="bPD-gm-6NZ"/>
                         <outlet property="dueDateLabel" destination="gs4-cm-GeN" id="nfc-Gr-Xd7"/>
+                        <segue destination="0Jl-XZ-VCY" kind="show" identifier="SegueToCountdown" id="0Za-9K-Rjs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="316"/>
+            <point key="canvasLocation" x="402" y="292"/>
         </scene>
         <!--Countdown View Controller-->
-        <scene sceneID="7TB-TG-WVh">
+        <scene sceneID="ApK-Dk-S2h">
             <objects>
-                <viewController id="ttH-ea-oEC" customClass="CountdownViewController" sceneMemberID="viewController">
+                <viewController id="0Jl-XZ-VCY" customClass="CountdownViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XVu-fc-LcV"/>
-                        <viewControllerLayoutGuide type="bottom" id="4eE-97-iUI"/>
+                        <viewControllerLayoutGuide type="top" id="VLf-fw-9Et"/>
+                        <viewControllerLayoutGuide type="bottom" id="4XN-04-etR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hBm-NS-UbN">
+                    <view key="view" contentMode="scaleToFill" id="nV9-8K-hul">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-eW-gpQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9Q-ss-ljB">
                                 <rect key="frame" x="175" y="175" width="250" height="250"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH2-Ee-PdH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSt-8w-e3J">
                                         <rect key="frame" x="76" y="89" width="98" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,45 +80,64 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="gLc-Ep-mbV"/>
-                                    <constraint firstItem="XH2-Ee-PdH" firstAttribute="centerX" secondItem="IY7-eW-gpQ" secondAttribute="centerX" id="jGW-P0-Tly"/>
-                                    <constraint firstItem="XH2-Ee-PdH" firstAttribute="centerY" secondItem="IY7-eW-gpQ" secondAttribute="centerY" id="qfk-LP-NWs"/>
-                                    <constraint firstAttribute="width" constant="250" id="zSV-Mc-p81"/>
+                                    <constraint firstAttribute="width" constant="250" id="0YC-Lh-7at"/>
+                                    <constraint firstAttribute="height" constant="250" id="7vW-q6-yf3"/>
+                                    <constraint firstItem="iSt-8w-e3J" firstAttribute="centerX" secondItem="k9Q-ss-ljB" secondAttribute="centerX" id="LfN-6a-mMB"/>
+                                    <constraint firstItem="iSt-8w-e3J" firstAttribute="centerY" secondItem="k9Q-ss-ljB" secondAttribute="centerY" id="dRS-cv-37K"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmv-nT-pcX">
-                                <rect key="frame" x="180" y="452" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbO-38-woT">
-                                <rect key="frame" x="207" y="28" width="187" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKb-Pp-Sgk">
+                                <rect key="frame" x="207" y="40" width="187" height="36"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother's Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxM-QW-yrd">
-                                <rect key="frame" x="212" y="72" width="176" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baby Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xj-3E-Jm8">
+                                <rect key="frame" x="224" y="459" width="152" height="36"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uR-HK-q53">
+                                <rect key="frame" x="232" y="535" width="136" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="4" maxX="12" maxY="4"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSaveButton:" destination="0Jl-XZ-VCY" eventType="touchUpInside" id="sKV-hF-4CT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother's Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBg-y5-7EU">
+                                <rect key="frame" x="212" y="84" width="176" height="36"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QxM-QW-yrd" firstAttribute="centerX" secondItem="hBm-NS-UbN" secondAttribute="centerX" id="7ef-uq-CCO"/>
-                            <constraint firstItem="JbO-38-woT" firstAttribute="top" secondItem="XVu-fc-LcV" secondAttribute="bottom" constant="8" id="PMb-IH-1WQ"/>
-                            <constraint firstItem="IY7-eW-gpQ" firstAttribute="centerX" secondItem="hBm-NS-UbN" secondAttribute="centerX" id="RRl-Ic-AkF"/>
-                            <constraint firstItem="JbO-38-woT" firstAttribute="centerX" secondItem="hBm-NS-UbN" secondAttribute="centerX" id="ZmJ-eF-i2S"/>
-                            <constraint firstItem="QxM-QW-yrd" firstAttribute="top" secondItem="JbO-38-woT" secondAttribute="bottom" constant="8" id="rZi-PV-sRz"/>
-                            <constraint firstItem="IY7-eW-gpQ" firstAttribute="centerY" secondItem="hBm-NS-UbN" secondAttribute="centerY" id="vfc-BL-Zs0"/>
+                            <constraint firstItem="4XN-04-etR" firstAttribute="top" secondItem="7uR-HK-q53" secondAttribute="bottom" constant="30" id="4E1-ad-zw6"/>
+                            <constraint firstItem="rKb-Pp-Sgk" firstAttribute="top" secondItem="VLf-fw-9Et" secondAttribute="bottom" constant="20" id="G7t-dT-FoH"/>
+                            <constraint firstItem="7uR-HK-q53" firstAttribute="top" secondItem="9Xj-3E-Jm8" secondAttribute="bottom" constant="40" id="Gaa-Ed-hIf"/>
+                            <constraint firstItem="VBg-y5-7EU" firstAttribute="centerX" secondItem="nV9-8K-hul" secondAttribute="centerX" id="J4b-87-6N1"/>
+                            <constraint firstItem="k9Q-ss-ljB" firstAttribute="centerX" secondItem="nV9-8K-hul" secondAttribute="centerX" id="Mqv-LT-7aV"/>
+                            <constraint firstItem="rKb-Pp-Sgk" firstAttribute="centerX" secondItem="nV9-8K-hul" secondAttribute="centerX" id="QpB-kH-c63"/>
+                            <constraint firstItem="9Xj-3E-Jm8" firstAttribute="centerX" secondItem="nV9-8K-hul" secondAttribute="centerX" id="Srx-kr-CmN"/>
+                            <constraint firstItem="k9Q-ss-ljB" firstAttribute="centerY" secondItem="nV9-8K-hul" secondAttribute="centerY" id="VAW-Q0-d6S"/>
+                            <constraint firstItem="VBg-y5-7EU" firstAttribute="top" secondItem="rKb-Pp-Sgk" secondAttribute="bottom" constant="8" id="XA9-Su-1H1"/>
+                            <constraint firstItem="7uR-HK-q53" firstAttribute="centerX" secondItem="nV9-8K-hul" secondAttribute="centerX" id="lke-Yv-dMO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="circularView" destination="IY7-eW-gpQ" id="kay-23-KFq"/>
-                        <outlet property="countdownDays" destination="XH2-Ee-PdH" id="qmS-Wz-WE0"/>
+                        <outlet property="babyNameLabel" destination="9Xj-3E-Jm8" id="ffm-Fh-9TN"/>
+                        <outlet property="circularView" destination="k9Q-ss-ljB" id="DHR-Fh-4V8"/>
+                        <outlet property="countdownDays" destination="iSt-8w-e3J" id="8uk-sa-RyM"/>
+                        <outlet property="messageLabel" destination="rKb-Pp-Sgk" id="jep-o1-7Rx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnf-X0-vfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8po-a3-caM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="351"/>
+            <point key="canvasLocation" x="1232" y="316"/>
         </scene>
     </scenes>
 </document>

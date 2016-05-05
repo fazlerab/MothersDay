@@ -11,7 +11,7 @@
 
 @interface ItsHappeningViewController ()
 @property (nonatomic,strong)NSDate *dueDate;
-
+@property (nonatomic, strong)UISegmentedControl *genderControl;
 
 @end
 
@@ -19,12 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.dao = [DAO sharedInstance];
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button addTarget:self
                action:@selector(doneButton)
      forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Done" forState:UIControlStateNormal];
     button.frame = CGRectMake(115.0, 670.0, 160.0, 40.0);
+    
+    self.genderControl = [[UISegmentedControl alloc] initWithItems:@[@"It's a Boy", @"It's a Girl"]];
+    [self.genderControl addTarget:self action:@selector(handleGenderControl) forControlEvents:UIControlEventValueChanged];
     
     [self.view addSubview:button];
   
@@ -89,11 +95,6 @@
     self.dueDateLabel.layer.shadowOpacity = .9;
     self.dueDateLabel.layer.shadowOffset = CGSizeZero;
     self.dueDateLabel.layer.masksToBounds = NO;
-    
-   
-    
-   
-
 }
 
 
@@ -103,9 +104,17 @@
 }
 
 -(void)doneButton{
-
-    CountdownViewController *cntrl = [[CountdownViewController alloc] init];
-    cntrl.dueDate = self.dueDate;
-    [self showViewController:cntrl sender:self];
+    if (!self.dueDate) {
+        self.dueDate = [NSDate date];
+    }
+    [self performSegueWithIdentifier:@"SegueToCountdown" sender:self.dueDate];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"SegueToCountdown"]) {
+        CountdownViewController *cntrl = (CountdownViewController *)segue.destinationViewController;
+        cntrl.dueDate = (NSDate *)sender;
+    }
+}
+
 @end

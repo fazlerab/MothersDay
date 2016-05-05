@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DAO.h"
 
+@class dao;
 @interface CountdownViewController : UIViewController
 
 @property (nonatomic, strong) NSDate *dueDate;
+@property (nonatomic, strong) DAO *dao;
+@property (nonatomic, strong) NSString *babyName;
 
 @end

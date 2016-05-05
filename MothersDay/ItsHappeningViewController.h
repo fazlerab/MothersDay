@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "DAO.h"
 
+@class DAO;
 
 @interface ItsHappeningViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *ItsHappeningLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dueDateLabel;
+@property (nonatomic, retain) DAO *dao;
 
 
 
