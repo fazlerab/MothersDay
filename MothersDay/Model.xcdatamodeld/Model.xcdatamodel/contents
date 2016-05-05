@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="DeletedMO" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SavedMO" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="SavedMO"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="SavedMO" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="DeletedMO" positionX="-54" positionY="9" width="128" height="60"/>
+    </elements>
+</model>

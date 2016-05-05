@@ -19,9 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
     
     self.dao = [DAO sharedInstance];
     
+=======
+<<<<<<< HEAD
+    // Do any additional setup after loading the view, typically from a nib.
+    GetRequest *get = [[GetRequest alloc]init];
+    [get getRequest];
+=======
+>>>>>>> 59f860ebda208d263f751e727f41b1e68810d128
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button addTarget:self
                action:@selector(doneButton)
@@ -52,6 +60,7 @@
     
     NSLog(@"value: %@",[sender date]);
     self.dueDate = [sender date];
+>>>>>>> 158b6e7b70d9d3e1a0ea2eba522ad60a22102e4a
 }
     
 
