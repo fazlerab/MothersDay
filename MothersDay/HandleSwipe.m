@@ -39,13 +39,13 @@
 }
 
 - (BOOL)checkForDeletedName:(NSString *)nameToCheck {
-  BOOL nameOK = YES;
+  BOOL hasNameBeenSwiped = NO;
   for (NSString *name in self.deletedNames) {
     if ([name isEqualToString:nameToCheck]) {
-      nameOK = NO;
+      hasNameBeenSwiped = YES;
     }
   }
-  return nameOK;
+  return hasNameBeenSwiped;
 }
 
 @end
