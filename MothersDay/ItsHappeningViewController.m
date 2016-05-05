@@ -7,6 +7,7 @@
 //
 
 #import "ItsHappeningViewController.h"
+#import "CountdownViewController.h"
 
 @interface ItsHappeningViewController ()
 @property (nonatomic,strong)NSDate *dueDate;
@@ -89,12 +90,9 @@
     self.dueDateLabel.layer.shadowOffset = CGSizeZero;
     self.dueDateLabel.layer.masksToBounds = NO;
     
-    
-    //button text
-    self.doneButton.titleLabel.text = @"DONE";
-    self.doneButton.titleLabel.textColor = [UIColor colorWithRed:(255.0/255)green:(102.0/255) blue:(255.0/255)alpha:1.0];
    
-
+    
+   
 
 }
 
@@ -104,6 +102,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)doneButton:(id)sender {
+-(void)doneButton{
+
+    CountdownViewController *cntrl = [[CountdownViewController alloc] init];
+    cntrl.dueDate = self.dueDate;
+    [self showViewController:cntrl sender:self];
 }
 @end

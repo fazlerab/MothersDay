@@ -13,8 +13,6 @@
 @interface ItsHappeningViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *ItsHappeningLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dueDateLabel;
-@property (weak, nonatomic) IBOutlet UIButton *doneButton;
-- (IBAction)doneButton:(id)sender;
 
 
 

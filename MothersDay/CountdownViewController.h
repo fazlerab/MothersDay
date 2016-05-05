@@ -10,6 +10,6 @@
 
 @interface CountdownViewController : UIViewController
 
-@property (nonatomic, strong) NSData *dueDate;
+@property (nonatomic, strong) NSDate *dueDate;
 
 @end
