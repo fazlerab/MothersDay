@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
 
 @interface ItsHappeningViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *ItsHappeningLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dueDateLabel;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
+- (IBAction)doneButton:(id)sender;
+
 
 
 @end
